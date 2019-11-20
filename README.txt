@@ -1,5 +1,5 @@
-Hi! this is the beta version on packman, using a-star algorithm for path-finding.
-The algorithm is adjusted to packman's map stacture and was writen especially for this.
+Hi! this is the beta version of Packman, using a-star algorithm for path-finding.
+The algorithm is adjusted to my map stacture and was writen especially for this.
 In the future I'll add:
 1) Map builder for random and smart packman map builder.
 2) Make the game much more interactive by changing the game loop and writing a much better code.
