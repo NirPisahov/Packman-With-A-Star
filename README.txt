@@ -4,6 +4,7 @@ In the future I'll add:
 1) Map builder for random and smart packman map builder.
 2) Make the game much more interactive by changing the game loop and writing a much better code.
 3) Fixing some bugs that I found in movements.
+4) Build the game itself using the existing base(Have to add: add packmen, end-game panel, welcome panel)
 
 System Requests:
 Java JDK-13.
