@@ -1,0 +1,16 @@
+Hi! this is the beta version on packman, using a-star algorithm for path-finding.
+The algorithm is adjusted to packman's map stacture and was writen especially for this.
+In the future I'll add:
+1) Map builder for random and smart packman map builder.
+2) Make the game much more interactive by changing the game loop and writing a much better code.
+3) Fixing some bugs that I found in movements.
+
+System Requests:
+Java JDK-13.
+Make sure the compilation level is 13 (via Eclipse project properties).
+Enable preview features (--enable-preview) also via Eclipse project properties. In 'Java Compiler' tab.
+
+And you're ready to go!
+
+If you have any problem in setting up the project. or you have any compilation/runtime errors. leave me a message, 
+and I'll upload a vesrion of this in lower-level compilation that should work for anybody.
