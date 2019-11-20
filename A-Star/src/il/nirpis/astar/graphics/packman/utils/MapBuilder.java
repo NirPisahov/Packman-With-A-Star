@@ -22,8 +22,8 @@ public class MapBuilder {
 	@SuppressWarnings("preview")
 	private static CellType getCellType(char visual) {
 		return switch (visual) {
-		case '•' -> CellType.NOTHING;
-		case '◘' -> CellType.WALL;
+		case '•' -> CellType.NOTHING;  // Alt+7 symbol. (make sure u save the file in UTF-8 format!!)
+		case '◘' -> CellType.WALL;  // Alt+8 symbol. (make sure u save the file in UTF-8 format!!)
 		case '*' -> CellType.POINT;
 		default -> null;
 		};
