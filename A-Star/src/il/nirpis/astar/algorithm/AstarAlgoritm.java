@@ -69,7 +69,11 @@ public class AstarAlgoritm {
 	}
 
 	private static boolean walkable(CellType[][] map, Point check) {
-		return map[check.y][check.x].isWalkable();
+		try {
+			return map[check.y][check.x].isWalkable();
+		} catch (Exception e) { 
+			return false;
+		}
 	}
 
 	private static boolean walkable(CellType[][] map, Node check) {

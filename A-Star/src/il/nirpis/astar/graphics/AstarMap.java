@@ -66,6 +66,7 @@ public class AstarMap extends JPanel {
 	public LinkedList<Point> updateAndPrintaStar(Point startNode, Point targetNode, boolean paintPath) {
 		resetCanvas();
 		LinkedList<Point> path = AstarAlgoritm.findPath(this.cells, startNode, targetNode, this.withDiagonal);
+		System.out.println(path);
 		if (path == null)
 			return null;
 

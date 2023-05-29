@@ -39,6 +39,7 @@ public class GameMap extends AstarMap implements MapEvents, Runnable {
 		this.packmen = new ArrayList<PackmanBot>();
 		generatePackmen(2, R);
 		this.player = new PackmanPlayer(new Point(0, 0), R, this::indexToPosition);
+
 		
 		this.gameOverPanel = new GameInfoPanel(this::gameOverButtonsEvents);
 		
@@ -98,8 +99,8 @@ public class GameMap extends AstarMap implements MapEvents, Runnable {
 			}
 			
 			final Stack<Point> s = new Stack<Point>();
-			s.push(new Point(31, 12));
-			s.push(new Point(33, 14));
+			s.push(new Point(3, 19));
+			s.push(new Point(14, 9));
 			
 			
 			this.packmen.parallelStream().forEach((packman) -> {
@@ -110,6 +111,7 @@ public class GameMap extends AstarMap implements MapEvents, Runnable {
 					init = packman.getLastCellAchieved().getIndex();
 				else // there were already path in a progress
 					init = packman.getPath().peek().getIndex();
+				
 				
 				LinkedList<Point> indexes = updateAndPrintaStar(init,
 						new Point(player.getPosX(), player.getPosY()), false);
@@ -159,7 +161,7 @@ public class GameMap extends AstarMap implements MapEvents, Runnable {
 	
 	private void initGame() {
 		this.gameOverPanel.setVisible(false);
-		this.player.moveTo(getCells(), new Point(14, 9));
+		this.player.moveTo(getCells(), new Point(0, 0));
 	}
 	
 	private void buildThread() {

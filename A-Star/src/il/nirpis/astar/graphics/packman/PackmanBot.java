@@ -53,6 +53,7 @@ public class PackmanBot implements Drawable, Updateable {
 			return;
 		int dx = dx(), dy = dy();
 		// update velocity vector
+
 		if (dx == 0 && dy == 0) {
 			lastCellAchieved = path.poll();
 			if (!path.isEmpty()) {
@@ -90,7 +91,6 @@ public class PackmanBot implements Drawable, Updateable {
 	public void draw(Graphics2D g) {
 		if (path == null)
 			return;
-		
 		g.setColor(Color.YELLOW);
 		Arc2D packman = new Arc2D.Double(posX - R, posY - R, R * 2, R * 2, (mouthOpeningAngle / 2) + (45 * mouthPosition),
 				360 - mouthOpeningAngle, Arc2D.PIE);

@@ -11,7 +11,7 @@ public class PackmanMain {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Packman - A* Algorithm example");
 		
-		GameMap map = new GameMap(30, MapBuilder.getMap(MapExamples.PackMan_UTF8));
+		GameMap map = new GameMap(30, MapBuilder.getMap(MapExamples.UTF8_Map));
 		
 		frame.getContentPane().add(map);
 		
